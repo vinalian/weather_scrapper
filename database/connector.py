@@ -7,7 +7,7 @@ from core.config import settings
 DATABASE_URL = f"postgresql+asyncpg://{settings.POSTGRES_USER}:{settings.POSTGRES_PASSWORD}@" + \
                f"{settings.POSTGRES_HOST}:{settings.POSTGRES_PORT}/{settings.POSTGRES_DB}"
 
-async_engine = create_async_engine(DATABASE_URL, echo=True)
+async_engine = create_async_engine(DATABASE_URL, echo=False)
 
 # Create session maker
 async_session = sessionmaker(bind=async_engine, class_=AsyncSession, expire_on_commit=False)
