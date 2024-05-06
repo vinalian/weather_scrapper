@@ -1,0 +1,12 @@
+Стэк:
+Aiohttp, Alembic, Sqlalchemy, Asyncpg, python-dotenv, pydantic, pydantic_settings, openpyxl
+
+Для запуска парсера запустите python файл start_scrapper.py, предварительно создав и заполнив .env файл по примеру из файла Example.env
+
+Для получения файла введите команду:
+
+python3 weather_xlsx.py --limit 10 --filename "weather_xlsx.xlsx"
+
+Параметры являются НЕ обязательными и имеют базовые значения.
+
+После выполнения скрипта xlsx файл будет создан в папке xlsx_scripts!
