@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "weather-to-lxml"
+version = "0.1.0"
+description = ""
+authors = ["vinalina <vinalian23@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.9.5"
+alembic = "^1.13.1"
+sqlalchemy = "^2.0.29"
+asyncpg = "^0.29.0"
+python-dotenv = "^1.0.1"
+pydantic = "^2.7.1"
+pydantic-settings = "^2.2.1"
+loguru = "^0.7.2"
+openpyxl = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
